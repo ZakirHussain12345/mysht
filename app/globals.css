@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0b5cd4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0a4bad;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a1a1a6;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 8px;
+}
+
+.brands-ticker {
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.brands-ticker::-webkit-scrollbar {
+  display: none;
+}
+
+.brands-carousel {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+  gap: 0.875rem;
+}
+
+.brands-carousel:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 3.5rem));
+  }
+}
