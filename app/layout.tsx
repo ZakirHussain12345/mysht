@@ -6,10 +6,12 @@ import './globals.css';
 const cabin = Cabin({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SH Trading | B2B Lighting, Power & Specialty Equipment Distributor',
-  description: 'Costa Mesa-based B2B distributor specializing in lighting, power, and specialty equipment from eight trusted brands. Request a quote today.',
+  title: 'SH Trading',
+  description: 'B2B supplier of solar, battery storage, EV charging, and commercial lighting.',
+  icons: {
+    icon: "/favicon.png",
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
